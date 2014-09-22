@@ -4,6 +4,9 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit some common GSM stuff
 $(call inherit-product, vendor/aicp/configs/gsm.mk)
 
+# Enhanced NFC
+$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/lge/d851/full_d851.mk)
 
