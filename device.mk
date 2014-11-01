@@ -22,6 +22,10 @@ $(call inherit-product-if-exists, vendor/lge/d851/d851-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+PRODUCT_PROPERTY_OVERRIDES += \
+	telephony.lteOnGsmDevice=1 \
+	ro.telephony.default_network=9
+
 # Get BCMDHD configs
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
